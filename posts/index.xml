@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mahum</title>
+    <link>https://MahumSamar.github.io/posts/</link>
+    <description>Recent content in Posts on Mahum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mahum - All rights reserved</copyright>
+    <lastBuildDate>Fri, 16 Apr 2021 05:33:50 +0500</lastBuildDate><atom:link href="https://MahumSamar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Task1</title>
+      <link>https://MahumSamar.github.io/posts/task1/</link>
+      <pubDate>Fri, 16 Apr 2021 05:33:50 +0500</pubDate>
+      
+      <guid>https://MahumSamar.github.io/posts/task1/</guid>
+      <description>Task 1  Which is according to the video 1 Video 1     By following the video provided for the assignment, I designed 64-bit OS, which is x86 compatible and is a multiboot 2 complaint.</description>
+    </item>
+    
+    <item>
+      <title>Task2</title>
+      <link>https://MahumSamar.github.io/posts/task2/</link>
+      <pubDate>Fri, 16 Apr 2021 05:33:40 +0500</pubDate>
+      
+      <guid>https://MahumSamar.github.io/posts/task2/</guid>
+      <description>Task 2  Which is according to the video 2 Video 2     Stack Used Stack to link to C code (C code handles all the stack manipulations)</description>
+    </item>
+    
+    <item>
+      <title>Task3</title>
+      <link>https://MahumSamar.github.io/posts/task3/</link>
+      <pubDate>Fri, 16 Apr 2021 05:33:29 +0500</pubDate>
+      
+      <guid>https://MahumSamar.github.io/posts/task3/</guid>
+      <description>Uploaded my code on my github repository. The explaination of the OS is given in
+ Task 1  Which is according to the video 1 Video 1   Task 2  Which is according to the video 2 Video 2    Final Output  The output that I printed on video memory is Source Code  My source code is available at my github Repository Github Source Code</description>
+    </item>
+    
+  </channel>
+</rss>

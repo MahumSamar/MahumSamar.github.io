@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.82.0" />
+	
+	<title>Task2 | Mahum</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Task2"/>
+<meta name="twitter:description" content="Task 2  Which is according to the video 2 Video 2     Stack Used Stack to link to C code (C code handles all the stack manipulations)"/>
+
+	<meta property="og:title" content="Task2" />
+<meta property="og:description" content="Task 2  Which is according to the video 2 Video 2     Stack Used Stack to link to C code (C code handles all the stack manipulations)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://MahumSamar.github.io/posts/task2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-16T05:33:40&#43;05:00" />
+<meta property="article:modified_time" content="2021-04-16T05:33:40&#43;05:00" />
+
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+
+	
+	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="https://MahumSamar.github.io/">
+
+            
+            <span style="font-family:Righteous;">Mahum</span>
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/posts">Assignment</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Mahum</h1>
+    <p class="lead">
+         
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Task2&url=https%3a%2f%2fMahumSamar.github.io%2fposts%2ftask2%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=https%3a%2f%2fMahumSamar.github.io%2fposts%2ftask2%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=https%3a%2f%2fMahumSamar.github.io%2fposts%2ftask2%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>        
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                                                
+                        
+                        <h1 class="posttitle">Task2</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <ul>
+<li>Task 2
+<ul>
+<li>Which is according to the video 2</li>
+<li><a href="https://www.youtube.com/watch?v=wz9CZBeXR6U">Video 2</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="stack">Stack</h4>
+<p>Used Stack to link to C code (C code handles all the stack manipulations)</p>
+<h5 id="mainasm">main.asm</h5>
+<ul>
+<li>Modified the <strong>main.asm</strong> file to create the stack</li>
+<li>section <strong>.bss</strong> statically allocated variables, this memory reserved when bootloader loads our kernel</li>
+<li>CPU uses <strong>ESP</strong> register to determine address of current stack frame referred to as stack pointer</li>
+<li>Stored the address of the top of stack into this register as there are currently no frames in the stack</li>
+<li>Before writing C code we will switch our mode in 64-bit</li>
+</ul>
+<h5 id="64-bit-mode">64-bit Mode</h5>
+<p>To switch to 64-bit mode, firstly go in long mode. Code is divided into sub-routines.</p>
+<ol>
+<li><strong>check_multiboot</strong> checks that boot loader is loaded.
+<ul>
+<li>Any complaint bootloader will store a magic value in the EAX register, so we will check that the EAX register holds this magic value.</li>
+<li>Use JNE instruction to jump to .no_multiboot label if the comparison fails otherwise return from the sub-routine.</li>
+<li>Then defined .no_multiboot label, if this is the case then we&rsquo;ll jump to the instructions which will display the error message, we will also add the error code which this message can use and put this code into AL register (used letter &ldquo;M&rdquo;).</li>
+<li>then defined error instructions
+<ul>
+<li>print this in our video memory</li>
+<li>and then hlt the CPU</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>check_cpuid</strong> subroutine (cpuid is CPU instruction that provide info about CPU)
+<ul>
+<li>for this, flip the id bit of the flag register, and if it can be flipped, then cpuid is available</li>
+</ul>
+</li>
+<li><strong>check_long_mode</strong> checks if the long mode is available.
+<ul>
+<li>CPU ID has been slowly extended overtime so first, need to check if CPU ID supports extended processor info.</li>
+</ul>
+</li>
+<li><strong>Paging</strong> To enter long mode, paging must be set up.
+<ul>
+<li>Virtual memory is to be implemented to enter 64-bit long mode through the process called paging.</li>
+<li>Paging allows us to map virtual addresses to physical addresses.</li>
+<li>This was done by creating page tables defining all the mappings which the CPU then looks at whenever you try to read or write to memory.</li>
+<li>A single page is a chunk of 4 kilobytes of memory.</li>
+<li>Memory is mapped by mapping a full page of virtual memory to physical memory at a time.</li>
+<li>Then 2 subroutines are called one sets up page tables and the other asks the CPU to enable paging.</li>
+<li>Reserve some memory for page tables in the .bss section. Each table is 4 kilobytes and it is important to align all the tables to 4 kilobytes for setting up our page table.</li>
+<li>Identity mapping was used i.e the physical addresses are mapped to the same virtual addresses. Paging will be activated automatically as soon as the long mode is enabled.</li>
+<li>CPU executes the instruction and the address of this instruction will be based on the physical address it already has before paging was enabled since the CPU will read this address as a virtual address.</li>
+<li>The simplest thing to do is map a chunk of these virtual addresses to the same physical addresses so that our instruction will continue to execute fluidly.</li>
+<li>There is a subroutine to enable the paging and enter long mode. We have to pass the page table location to the CPU and the CPU looks for this value in the cr3 register.</li>
+<li>By doing this we entered the long mode but in a 32-bit compatible mode.</li>
+<li>To enter 64-bit mode we have to define a global descriptor table. We created a read-only section where we define our 64-bit global descriptor table.</li>
+<li>Used a <strong>long_mode_start</strong> label which will be external and defined in main64.asm.</li>
+</ul>
+</li>
+</ol>
+<h5 id="main64asm">main64.asm</h5>
+<ul>
+<li>In main 64.asm is our code segment, we defined 64-bit and make long_mode_start global so that main.asm can access it.</li>
+</ul>
+<h4 id="printing-in-c">Printing in C</h4>
+<ul>
+<li>Before coding in C, moved printing statement in main64.asm from main.asm file</li>
+<li>And then build kernel</li>
+<li>After that, made a new folder (kernel) and created the main.c file</li>
+<li>Defined the kernel_main function in it which will print the message and will call this in our assembly code in main64.asm</li>
+<li>Then create an intf folder in the src folder where print.h file is created and defined our printing interface</li>
+<li>print.c file is created in x86_64 folder and included print.h file in it</li>
+<li>A &ldquo;buffer&rdquo; variable is created as a pointer to the video memory. Text printed to video memory is in form of rows and columns so defined constants for the number of rows and columns.</li>
+<li>Define functions that print the text in the video memory.</li>
+</ul>
+<h4 id="makefile">Makefile</h4>
+<p>Then made changes to Makefile.</p>
+<ul>
+<li>Defined variables for C source and object files.</li>
+<li>Defined variables for kernel source and object files.</li>
+<li>Defined variable to hold x86_64 object files. And concatenate arrays of C and assembly object files. GCC is used to build C files.</li>
+<li>Then modified build command to build all the object files for x86_64 (having both C and assembly object files) and the kernel object files.</li>
+</ul>
+<h4 id="final-build">Final Build</h4>
+<p>Used build command again</p>
+<ul>
+<li><code>make build-x86_64</code>
+<img src="/images/t2_1.png" alt="img 1"></li>
+</ul>
+<p>And emulated it with Qemu</p>
+<ul>
+<li><code>&quot;C:\Program Files\qemu\qemu-system-x86_64&quot; -cdrom dist/x86_64/kernel.iso</code>
+<img src="/images/t2_2.png" alt="img 1">
+<img src="/images/t2_3.png" alt="img 1"></li>
+</ul>
+<h4 id="final-output">Final Output</h4>
+<hr>
+<p>The output that I printed on video memory is
+<img src="/images/final.png" alt="img 1"></p>
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="d-block col-md-6" href="https://MahumSamar.github.io/posts/task1/"> &laquo; Task1</a>
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="https://MahumSamar.github.io/posts/task3/">Task3 &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Mahum - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>
